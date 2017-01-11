@@ -52,6 +52,11 @@ textarea {
     background: #cacaca;
 }
 
+.cvqt{
+    color: orange;
+    font-size: xx-large;
+
+}
 /* ----------------------- FOOTER -----------------------*/
 #footer {
   width: 900px;
