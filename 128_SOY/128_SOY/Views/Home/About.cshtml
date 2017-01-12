@@ -1,7 +1,137 @@
-﻿@{
-    ViewBag.Title = "About";
-}
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
+﻿<!DOCTYPE html>
+<html lang="bg-BG">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <style>
+        p.cvqt {
+            color: orange;
+            font-size: larger;
+        }
 
-<p>Use this area to provide additional information.</p>
+        a.cvqt {
+            color: orange;
+            font-size: 20px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="well">
+        <div class="daskalo">
+            <div class="">
+                <div class="container">
+                    <div>
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        @Html.ActionLink(" ", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                    </div>
+                    <div class="header-right">
+                        <ul class="list-inline">
+                            @Html.ActionLink("Начало", "Index", "Home", null, new { @class = "buttons" })
+                            <li class="buttons" data-toggle="popover" data-placement="bottom" data-trigger="hover">За Нас</li>
+                            <li class="buttons" data-toggle="popover" data-placement="bottom" data-trigger="hover" data-content="Content">Прием</li>
+                            <li class="buttons" data-toggle="popover" data-placement="bottom" data-trigger="hover" data-content="Content">Проекти</li>
+                        </ul>
+                    </div>
+                </div>
+                <script>
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover();
+});
+                </script>
+            </div>
+            <div id="page-heading">
+                <img src="http://128sou-sofia.info/wp-content/themes/ecobiz/images/page-heading.jpg" alt="">
+                <div class="heading-text">
+                    <h3>За нас</h3>
+                    <p></p>
+                </div>
+            </div> 
+            <div class="container body-content">   
+                
+                
+                <div class="text-center">
+                    НОВО! Прием след завършен седми клас. Две паралелки профил "Технологичен" -
+                    <p class="cvqt"> Защита на информацията </p>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="http://128sou-sofia.info/wp-content/uploads/2016/05/20160419_180050-160x160.jpg" class="img-responsive" alt="Cinque Terre" width="172" height="172">
+                    </div>
+                    <div class="col-sm-3">
+                        @*@Html.ActionLink("Ученици от 128 СОУ „Алберт Айнщайн” печелят медал на състезание за есе на английски език в Дубай (видео)", "Index", "Home", null, new { @class = "cvqt" })*@
+                        <a class="cvqt" href="https://128sou-sofia.info/%d0%b7%d0%b0-%d0%b7%d1%80%d0%b5%d0%bb%d0%be%d1%81%d1%82%d0%bd%d0%b8%d1%86%d0%b8/">Ученици от 128 СОУ „Алберт Айнщайн” печелят медал на състезание за есе на английски език в Дубай (видео)</a>
+                    </div>
+                    <div class="col-sm-5">
+                        <div class="panel panel-default">
+                            <div class="panel-body"><img src="http://128sou-sofia.info/wp-content/uploads/2016/02/128_SpecialniGosti.jpg" class="img-thumbnail" alt="Cinque Terre" width="200" height="285"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        @*<video width="172" height="172" controls>
+                                <source src="movie.mp4" type="video/mp4">
+                                <source src="movie.ogg" type="video/ogg">
+                                Your browser does not support the video tag.
+                            </video>*@
+                        <iframe width="172" height="172" src="https://www.youtube.com/embed/XGSy3_Czz8k"></iframe>
+                    </div>
+                    <div class="col-sm-3">
+                        @*@Html.ActionLink("Ученици от 128 СОУ „Алберт Айнщайн” печелят медал на състезание за есе на английски език в Дубай (видео)", "Index", "Home", null, new { @class = "cvqt" })*@
+                        <a class="cvqt" href="https://128sou-sofia.info/%d0%b7%d0%b0-%d0%b7%d1%80%d0%b5%d0%bb%d0%be%d1%81%d1%82%d0%bd%d0%b8%d1%86%d0%b8/">Заедно можем повече</a>
+                    </div>
+                    <div class="col-sm-5">
+                        <div class="panel panel-default">
+                            <div class="panel-body"><img src="http://128sou-sofia.info/wp-content/uploads/2016/02/128_UchilishtenJivot.jpg" class="img-thumbnail" alt="Cinque Terre" width="200" height="285"></div>
+                        </div>
+                    </div>
+                    @*<div class="mejs-overlay mejs-layer mejs-overlay-play" style="width: 100%; height: 100%;"><div class="mejs-overlay-button"></div></div>*@
+                </div>
+            </div>
+        </div>
+        <hr />
+    </div>
+    <div class="well-footer ">
+        <div id="footer">
+            <div class="clear"></div>
+
+            <div>
+                <!-- Footer Menu -->
+                <div class="footermenu">
+                    <ul id="menu-footer" class="">
+                        <li id="menu-item-128" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-128"><a href="https://128sou-sofia.info/%d0%b7%d0%b0-%d0%b7%d1%80%d0%b5%d0%bb%d0%be%d1%81%d1%82%d0%bd%d0%b8%d1%86%d0%b8/">За зрелостници</a></li>
+                        <li id="menu-item-129" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-129"><a href="https://128sou-sofia.info/%d0%b2%d0%b0%d0%b6%d0%bd%d0%b8-%d0%b2%d1%80%d1%8a%d0%b7%d0%ba%d0%b8/">Важни връзки</a></li>
+                        <li id="menu-item-130" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-130"><a href="https://128sou-sofia.info/%d0%b0%d0%ba%d1%82%d1%83%d0%b0%d0%bb%d0%bd%d0%be/">Актуално</a></li>
+                        <li id="menu-item-132" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-132"><a href="https://128sou-sofia.info/%d0%b3%d0%b0%d0%bb%d0%b5%d1%80%d0%b8%d1%8f/">Галерия</a></li>
+                        <li id="menu-item-131" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-131"><a href="https://128sou-sofia.info/%d0%ba%d0%be%d0%bd%d1%82%d0%b0%d0%ba%d1%82%d0%b8/">Контакти</a></li>
+                    </ul>
+                </div>
+                <!-- Footer Menu End -->
+                <!-- Site Copyright -->
+                <div class="copyright">
+                    <p>        Изградено от Рида Амайре</p>
+                </div>
+                <!-- Site Copyright End -->
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover();
+});
+    </script>
+
+</body>
+</html>

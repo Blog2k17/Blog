@@ -39,9 +39,9 @@
             <div class="header-right">
                     <ul class="list-inline">
                         @Html.ActionLink("Начало","Index", "Home", null, new {@class="buttons" })
-                        <li class="buttons" title="Header" data-toggle="popover" data-placement="bottom" data-trigger="hover" data-content="Content">За Нас</li>
-                        <li class="buttons" title="Header" data-toggle="popover" data-placement="bottom" data-trigger="hover" data-content="Content">Прием</li>
-                        <li class="buttons" title="Header" data-toggle="popover" data-placement="bottom" data-trigger="hover" data-content="Content">Проекти</li>
+                        <li class="buttons"  data-toggle="popover" data-placement="bottom" data-trigger="hover" >За Нас</li>
+                        <li class="buttons"  data-toggle="popover" data-placement="bottom" data-trigger="hover" data-content="Content">Прием</li>
+                        <li class="buttons"  data-toggle="popover" data-placement="bottom" data-trigger="hover" data-content="Content">Проекти</li>
                     </ul>
             </div>
         </div>
@@ -64,18 +64,18 @@ $(document).ready(function(){
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner" role="listbox">
 
-                    <div class="item active">
-                        <img src="http://128sou-sofia.info/wp-content/uploads/2013/03/picsliderproekti-e1364378647398-820x344.jpg" alt="Chania" width="960" height="345">
-                        <div class="carousel-caption">
-                            <h3>Проекти</h3>
-                        </div>
-                    </div>
-
                     <div class="item">
-                        <img src="http://128sou-sofia.info/wp-content/uploads/2013/03/pic1-800x344.jpg" alt="Chania" width="960" height="345">
+                       <a href="https://www.facebook.com/"><img src="http://128sou-sofia.info/wp-content/uploads/2013/03/pic1-800x344.jpg" alt="Chania" width="960" height="345"></a> 
                         <div class="carousel-caption">
                             <h3>За Нас</h3>
                             <p>Нашето училище отваря врати за първи път на 17.02.1975 г. В началото учителският колектив с директор Мата Стайкова се състои от 22 педагози, обучаващи около 560 ученика от начален и среден курс. От м. септември 1984 г. училището е обявено за ЕСПУ – с две паралелки в 9 клас. </p>
+                        </div>
+                    </div>
+
+                    <div class="item active">
+                        <a href="https://www.facebook.com/"><img src="http://128sou-sofia.info/wp-content/uploads/2013/03/picsliderproekti-e1364378647398-820x344.jpg" alt="Chania" width="960" height="345"></a>
+                        <div class="carousel-caption">
+                            <h3>Проекти</h3>
                         </div>
                     </div>
 
@@ -106,7 +106,7 @@ $(document).ready(function(){
             </div>
                 <div class="col-sm-5">
                     <div class="panel panel-default">
-                        <div class="panel-body"><img src="http://128sou-sofia.info/wp-content/uploads/2016/02/128_SpecialniGosti.jpg" class="img-responsive" alt="Cinque Terre" width="200" height="285"></div>
+                        <div class="panel-body"><img src="http://128sou-sofia.info/wp-content/uploads/2016/02/128_SpecialniGosti.jpg" class="img-thumbnail" alt="Cinque Terre" width="200" height="285"></div>
                     </div>
                 </div>
             <div class="col-md-4">
@@ -123,9 +123,10 @@ $(document).ready(function(){
             </div>
             <div class="col-sm-5">
                 <div class="panel panel-default">
-                    <div class="panel-body"><img src="http://128sou-sofia.info/wp-content/uploads/2016/02/128_UchilishtenJivot.jpg" class="img-responsive" alt="Cinque Terre" width="200" height="285"></div>
+                    <div class="panel-body"><img src="http://128sou-sofia.info/wp-content/uploads/2016/02/128_UchilishtenJivot.jpg" class="img-thumbnail" alt="Cinque Terre" width="200" height="285"></div>
                 </div>
             </div>
+            @*<div class="mejs-overlay mejs-layer mejs-overlay-play" style="width: 100%; height: 100%;"><div class="mejs-overlay-button"></div></div>*@
         </div>
         </div>
           </div>
