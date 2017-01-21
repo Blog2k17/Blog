@@ -5560,6 +5560,7 @@ a.list-group-item:focus {
   border-radius: 10px;
   box-shadow:0 0 3px #000 inset;
   background-color: white;
+  z-index: 1;
 }
 
 .well blockquote {
