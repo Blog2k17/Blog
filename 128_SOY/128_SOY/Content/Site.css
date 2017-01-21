@@ -206,18 +206,22 @@ ul.addresslist li  {
 /*navbar*/
 
 .header-right{
-  width: 600px;
   float: right;
-  margin-top:2vw;
-  font-size:larger
+  font-size:larger;
+  
 }
 .buttons {
     color:gray; 
+    background:none;
+    margin-top: -10vw;
 }
 
 .buttons:hover {
     background-color:none;
     color:orange;
+    background: none;
+    border: none;
+    outline: none;
 }
 
 #page-heading {
