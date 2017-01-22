@@ -60,7 +60,7 @@ lement.style {
     display: block;
 }
 ul#listlatestnews li * {
-    z-index: 2;
+   
 }
 
 .featured-video-plus.fvp-responsive .mejs-overlay, .featured-video-plus.fvp-responsive .mejs-poster {
@@ -213,7 +213,6 @@ ul.addresslist li  {
 .buttons {
     color:gray; 
     background:none;
-    margin-top: -10vw;
 }
 
 .buttons:hover {
@@ -234,7 +233,7 @@ ul.addresslist li  {
     border-bottom: 2px solid ;
     border-color: orange;
     background-image: url(http://128sou-sofia.info/wp-content/themes/ecobiz/images/page-heading.jpg);
-    z-index:10;
+   
 }
 
 .heading-text {
@@ -253,7 +252,7 @@ ul.addresslist li  {
     -moz-border-radius-bottomright: 8px;
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
-    z-index:5;
+   
 }
 
 
@@ -272,7 +271,7 @@ ul.addresslist li  {
   left: 0;
 }
 #infoi {
-  z-index: 10;
+ 
 }
 
 .maincontent{
