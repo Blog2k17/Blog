@@ -135,25 +135,53 @@
                 <div class="sidebar">
                     <div class="sidebartop"></div><div class="sidebarmain">
                         <div id="recent-posts-4" class="sidebarcontent widget_recent_entries">
-                            <h4 class="sidebarheading">Последни новини</h4>		<ul>
-                                <li>
-                                    <a href="https://128sou-sofia.info/%d1%83%d1%87%d0%b5%d0%bd%d0%b8%d1%86%d0%b8-%d0%be%d1%82-128-%d1%81%d0%be%d1%83-%d0%b0%d0%bb%d0%b1%d0%b5%d1%80%d1%82-%d0%b0%d0%b9%d0%bd%d1%89%d0%b0%d0%b9%d0%bd-%d0%bf%d0%b5%d1%87/">Ученици от 128 СОУ „Алберт Айнщайн” печелят медал на състезание за есе на английски език в Дубай (видео)</a>
-                                </li>
-                                <li>
-                                    <a href="https://128sou-sofia.info/%d0%b7%d0%b0%d0%b5%d0%b4%d0%bd%d0%be-%d0%bc%d0%be%d0%b6%d0%b5%d0%bc-%d0%bf%d0%be%d0%b2%d0%b5%d1%87%d0%b5/">Заедно можем повече</a>
-                                </li>
-                                <li>
-                                    <a href="https://128sou-sofia.info/%d1%86%d1%8f%d0%bb%d0%be%d1%81%d1%82%d0%bd%d0%be-%d0%be%d0%b1%d0%bd%d0%be%d0%b2%d1%8f%d0%b2%d0%b0%d0%bd%d0%b5-%d0%bd%d0%b0-%d0%ba%d0%bb%d0%b0%d1%81%d0%bd%d0%b8%d1%82%d0%b5-%d1%81%d1%82%d0%b0%d0%b8/">Цялостно обновяване на класните стаи и учебни кабинети</a>
-                                </li>
-                                <li>
-                                    <a href="https://128sou-sofia.info/%d1%81%d1%8a%d0%be%d0%b1%d1%89%d0%b5%d0%bd%d0%b8%d0%b5/">Златен медал в училището!</a>
-                                </li>
-                                <li>
-                                    <a href="https://128sou-sofia.info/%d0%be%d0%b1%d1%80%d1%8a%d1%89%d0%b5%d0%bd%d0%b8%d0%b5-%d0%bd%d0%b0-%d0%b3-%d0%bd-%d1%8e%d0%bb%d0%b8%d1%8f%d0%bd-%d0%bf%d0%bb%d0%b0%d1%87%d0%ba%d0%be%d0%b2-%d0%b4%d0%b8%d1%80%d0%b5%d0%ba%d1%82%d0%be/">Обръщение на г-н Юлиян Плачков, директор на 128 СОУ „Алберт Айнщайн“, по случай началото на учебната 2013/2014 г.</a>
-                                </li>
+                            <h4 class="sidebarheading">За Нас</h4><hr>
+                            <ul style="list-style: none; font-size:smaller; border-color:black;">
+                                <li class="actionLink">
+                                    @Html.ActionLink("История и Традиции", "About", "Home", null, new { @class="actionLinks"}) &gt;
+                                </li><hr class="sidebar-divider">
+                                <li class="actionLink">
+                                    @Html.ActionLink("Педагогически екип", "About", "Home", null, new { @class = "actionLinks" }) &gt;                
+                                </li ><hr class="sidebar-divider">
+                                <li class="actionLink">
+                                    @Html.ActionLink("Училищна среда", "About", "Home", null, new { @class = "actionLinks" }) &gt;
+                                </li><hr class="sidebar-divider">
+                                <li class="actionLink">
+                                    @Html.ActionLink("Профил на купувача и други документи", "About", "Home", null, new { @class = "actionLinks" }) &gt;
+                                </li><hr class="sidebar-divider">
+                                <li class="actionLink">
+                                    @Html.ActionLink("Електронен дневник", "About", "Home", null, new { @class = "actionLinks" }) &gt;
+                                </li><hr class="sidebar-divider">
+                                <li class="actionLink">
+                                    @Html.ActionLink("Училищен живот", "About", "Home", null, new { @class = "actionLinks" }) &gt;
+                                </li><hr class="sidebar-divider">
+                                <li class="actionLink">
+                                    @Html.ActionLink("Наши специални гости", "About", "Home", null, new { @class = "actionLinks" }) &gt;
+                                </li><hr class="sidebar-divider">
+                            </ul>
+                        </div><br>
+                    </div><div class="sidebarbottom"></div><div class="sidebarmain">
+                        <div id="recent-posts-4" class="sidebarcontent widget_recent_entries">
+                            <h4 class="sidebarheading">Последни новини</h4><hr>
+                            <ul style="list-style: none; font-size:smaller;">
+                                <li class="actionLink">
+                                    @Html.ActionLink("Ученици от 128 СОУ „Алберт Айнщайн” печелят медал на състезание за есе на английски език в Дубай (видео)", "About", "Home", null, new { @class="actionLinks"}) &gt;
+                                </li><hr class="sidebar-divider">
+                                <li class="actionLink">
+                                    @Html.ActionLink("Заедно можем повече", "About", "Home", null, new { @class = "actionLinks" }) &gt;                
+                                </li ><hr class="sidebar-divider">
+                                <li class="actionLink">
+                                    @Html.ActionLink("Цялостно обновяване на класните стаи и учебни кабинети", "About", "Home", null, new { @class = "actionLinks" }) &gt;
+                                </li><hr class="sidebar-divider">
+                                <li class="actionLink">
+                                    @Html.ActionLink("Златен медал в училището!", "About", "Home", null, new { @class = "actionLinks" }) &gt;
+                                </li><hr class="sidebar-divider">
+                                <li class="actionLink">
+                                    @Html.ActionLink("Обръщение на г-н Юлиян Плачков, директор на 128 СОУ „Алберт Айнщайн“, по случай началото на учебната 2013/2014 г.", "About", "Home", null, new { @class = "actionLinks" }) &gt;
+                                </li><hr class="sidebar-divider">
                             </ul>
                         </div>
-                    </div><div class="sidebarbottom"></div>
+                    </div>
                 </div>
             </div>
             <!-- Side Content End-->
