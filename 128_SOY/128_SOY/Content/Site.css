@@ -275,9 +275,10 @@ ul.addresslist li  {
 }
 
 .maincontent{
+    display:inline-block;
     width:630px;
     height: 850px;
-    
+    margin:20px;
 }
 
 .sidebarwe{

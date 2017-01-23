@@ -24,7 +24,7 @@
     </style>
 </head>
 <body>
-    <div class="well">
+    <div class="well" style="padding:5px;">
         <div class="daskalo">
             <div class="">
                 <div class="container">
@@ -37,33 +37,88 @@
                         @Html.ActionLink(" ", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
                     </div>
                     <div class="header-right">
-                        <ul class="list-inline">
-                            @Html.ActionLink("Начало", "Index", "Home", null, new { @class = "buttons" })
-                            <li class="buttons" data-toggle="popover" data-placement="bottom" data-trigger="hover">За Нас</li>
-                            <li class="buttons" data-toggle="popover" data-placement="bottom" data-trigger="hover" data-content="Content">Прием</li>
-                            <li class="buttons" data-toggle="popover" data-placement="bottom" data-trigger="hover" data-content="Content">Проекти</li>
+                        <ul class="list-inline" style="margin-top:20px;">
+                            <li class="collapse navbar" id="bs-example-navbar-collapse-1">
+                                <ul class="nav navbar-nav">
+                                    <li class="dropdown">
+                                        @Html.ActionLink("Начало", "Index", "Home", null, new { @class = "dropdown-toggle buttons" })
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="collapse navbar" id="bs-example-navbar-collapse-1" style="background: none; border: none; outline: none;">
+                                <ul class="nav navbar-nav">
+                                    <li class="dropdown">
+                                        @Html.ActionLink("За нас", "About", "Home", null, new { @class = "dropdown-toggle buttons" })
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">shibaniq bootstrap mi skusa nevrive</a></li>
+                                            <li class="divider"></li>
+                                            <li><a href="#">ne moga dama mahna hovera da syava otzab okei bez fon</a></li>
+                                            <li class="divider"></li>
+                                            <li><a href="#">Something else here</a></li>
+                                            <li class="divider"></li>
+                                            <li><a href="#">Separated link</a></li>
+                                            <li class="divider"></li>
+                                            <li><a href="#">One more separated link</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="collapse navbar" id="bs-example-navbar-collapse-1">
+                                <ul class="nav navbar-nav">
+                                    <li class="dropdown">
+                                        @Html.ActionLink("Прием", "Index", "Home", null, new { @class = "dropdown-toggle buttons" })
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Action</a></li>
+                                            <li><a href="#">Another action</a></li>
+                                            <li><a href="#">Something else here</a></li>
+                                            <li class="divider"></li>
+                                            <li><a href="#">Separated link</a></li>
+                                            <li class="divider"></li>
+                                            <li><a href="#">One more separated link</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="collapse navbar" id="bs-example-navbar-collapse-1">
+                                <ul class="nav navbar-nav">
+                                    <li class="dropdown">
+                                        @Html.ActionLink("Проекти", "Index", "Home", null, new { @class = "dropdown-toggle buttons" })
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Action</a></li>
+                                            <li><a href="#">Another action</a></li>
+                                            <li><a href="#">Something else here</a></li>
+                                            <li class="divider"></li>
+                                            <li><a href="#">Separated link</a></li>
+                                            <li class="divider"></li>
+                                            <li><a href="#">One more separated link</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
                         </ul>
                     </div>
                 </div>
                 <script>
-$(document).ready(function(){
-    $('[data-toggle="popover"]').popover();
-});
+            $('ul.nav li.dropdown').hover(function () {
+                $(this).find('.dropdown-menu').stop(true, true).delay(100).fadeIn(50);
+            }, function () {
+                $(this).find('.dropdown-menu').stop(true, true).delay(100).fadeOut(50);
+            });
                 </script>
             </div>
             <!-- Page Heading Start -->
-            <div id="page-heading">
-                <div class="heading-text">
-                    <h3>За нас</h3>
-                    <p></p>
-                </div>
-            </div> 
+
+            <div id="page-heading" style="position:center; width:auto;">
+                <h3 class="heading-text">За Нас
+                </h3>
+            </div>
             <!-- Page Heading End -->
-            <!-- Main Content Start -->
-            <div class="maincontent">
-               <div class="text-center"><strong>СОУ „Алберт Айнщайн“ – История и традиции</strong></div>
-                <p style="padding-top:20px; line-height: 21px; font-size:12px; vertical-align:baseline; display:inline-block;" >
-                    <img class="img-responsive" src="http://128sou-sofia.info/wp-content/uploads/2013/03/%D0%B7%D0%B0-%D0%BD%D0%B0%D1%81-128%D0%A1%D0%9E%D0%A3.jpg" width="201" height="217"/>
+            <!-- Main Content Start
+                <img src="http://128sou-sofia.info/wp-content/uploads/2013/03/%D0%B7%D0%B0-%D0%BD%D0%B0%D1%81-128%D0%A1%D0%9E%D0%A3.jpg" width="201" height="217" /> -->
+            <div class="maincontent" style="margin-left:20px;">
+                <div class="text-center"><strong>СОУ „Алберт Айнщайн“ – История и традиции</strong></div>
+                <p style="padding-top:20px; line-height: 21px; font-size:12px; vertical-align:baseline; display:inline-block; color:grey;">
+                    <div style="float:left; width:201px; height:217px; margin:10px;"><img src="http://128sou-sofia.info/wp-content/uploads/2013/03/%D0%B7%D0%B0-%D0%BD%D0%B0%D1%81-128%D0%A1%D0%9E%D0%A3.jpg" /></div>
                     Нашето училище отваря врати за първи път на 17.02.1975 г. В началото учителският колектив с директор Мата Стайкова се състои от 22 педагози, обучаващи около 560 ученика от начален и среден курс. От м. септември 1984 г. училището е обявено за ЕСПУ – с две паралелки в 9 клас. Постепенно броят на учителите нараства до 60 души, а учениците са над 1000. В гимназиален курс започва осъществяването на профилирано обучение в областта на хуманитарните и природоматематическите науки, както и на технологиите.
                     От м. Септември 1989 г.  новият директор на училището е г-жа Емилия Илиева. Нейните усилия и амбиции са насочени към съхраняване и развитие на заложените традиции в живота на 128–мо училище, разширяване на чуждо езиковото обучение, обогатяване и модернизация на материално-техническата база. Така за няколко години са открити  – интерактивна зала, видео система и телефонна връзка с всички класни стаи, актова зала, фонетичен и компютърен кабинет.
                     От есента на 1992 г. се осъществява идеята за утвърждаване на стопански профил в училището със специализация по икономика и мениджмънт в горен курс, като се изучават – английски език, стенография, компютърна грамотност и др. През 1996 г. се въвежда пред професионална подготовка по специалност “Митническо комисионерство” с изучаване на основи на пазарната икономика и мениджмънт, основи на правото, счетоводство, стокознание, митническа политика и международни плащания. От 1998 г. започва обучение по специалност “Организатор на среден и дребен бизнес”, която дава възможност за получаване и на сертификат за професионална квалификация на английски език.
@@ -75,7 +130,6 @@ $(document).ready(function(){
                 </p>
             </div>
             <!-- Main Content End -->
-
             <!-- Side Content Start -->
             <div class="sidebarwe">
                 <div class="sidebar">
