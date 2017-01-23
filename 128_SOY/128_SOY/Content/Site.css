@@ -299,3 +299,12 @@ margin:10px;
     color: orange;
     outline: none;
 }
+
+.ngg-galleryoverview {
+    overflow: hidden;
+    margin-top: 10px;
+    width: 100%;
+    clear: both;
+    display: block !important;
+}
+
