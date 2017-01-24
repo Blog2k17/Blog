@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project</title>
+    <title>128 СОУ "Алберт Айнщайн"</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -50,15 +50,13 @@
                                 <li class="dropdown">
                                     @Html.ActionLink("За нас", "About", "Home", null, new { @class="dropdown-toggle buttons"})
                                     <ul class="dropdown-menu">
-                                        <li><a href="#">shibaniq bootstrap mi skusa nevrive</a></li>
-                                        <li class="divider"></li>
-                                        <li><a href="#">ne moga dama mahna hovera da syava otzab okei bez fon</a></li>
-                                        <li class="divider"></li>
-                                        <li><a href="#">Something else here</a></li>
-                                        <li class="divider"></li>
-                                        <li><a href="#">Separated link</a></li>
-                                        <li class="divider"></li>
-                                        <li><a href="#">One more separated link</a></li>
+                                        <li>@Html.ActionLink("История и традиции", "IstoriaTradicii", "ZaNas", null)</li>
+                                        <li>@Html.ActionLink("Педагогически екип", "PedagogicheskiEkip", "ZaNas", null)</li>
+                                        <li>@Html.ActionLink("Училищна среда", "UchilishtnaSreda", "ZaNas", null)</li>
+                                        <li>@Html.ActionLink("Профил на купувача и други документи", "Profil", "ZaNas", null)</li>
+                                        <li>@Html.ActionLink("Електронен дневник", "ElektronenDnevnik", "ZaNas", null)</li>
+                                        <li>@Html.ActionLink("Училищен живот", "UchilishtenJivot", "ZaNas", null)</li>
+                                        <li>@Html.ActionLink("Наши специални гости", "SpecialniGosti", "ZaNas", null)</li>
                                     </ul>
                                 </li>
                             </ul>
@@ -66,15 +64,15 @@
                         <li class="collapse navbar" id="bs-example-navbar-collapse-1">
                             <ul class="nav navbar-nav">
                                 <li class="dropdown">
-                                    @Html.ActionLink("Прием", "Index", "Home", null, new { @class = "dropdown-toggle buttons" })
+                                    @Html.ActionLink("Прием", "Index", "Priem", null, new { @class = "dropdown-toggle buttons" })
                                     <ul class="dropdown-menu">
-                                        <li><a href="#">Action</a></li>
-                                        <li><a href="#">Another action</a></li>
-                                        <li><a href="#">Something else here</a></li>
-                                        <li class="divider"></li>
-                                        <li><a href="#">Separated link</a></li>
-                                        <li class="divider"></li>
-                                        <li><a href="#">One more separated link</a></li>
+                                        <li>@Html.ActionLink("В подготвителна група", "PodgotvitelnaGrupa", "Priem", null)</li>
+                                        <li>@Html.ActionLink("В първи клас", "PyrviKlas", "Priem", null)</li>
+                                        <li>@Html.ActionLink("В пети клас", "PetiKlas", "Priem", null)</li>
+                                        <li>@Html.ActionLink("След завършен VII клас", "Sled7miKlas", "Priem", null)</li>
+                                        <li>@Html.ActionLink("След завършен VIII клас", "Sled8miKlas", "Priem", null)</li>
+                                        @*<li class="divider"></li>*@
+                                       
                                     </ul>
                                 </li>
                             </ul>
@@ -82,15 +80,16 @@
                         <li class="collapse navbar" id="bs-example-navbar-collapse-1">
                             <ul class="nav navbar-nav">
                                 <li class="dropdown">
-                                    @Html.ActionLink("Проекти", "Index", "Home", null, new { @class = "dropdown-toggle buttons" })
+                                    @Html.ActionLink("Проекти", "Index", "Project", null, new { @class = "dropdown-toggle buttons" })
                                     <ul class="dropdown-menu">
-                                        <li><a href="#">Action</a></li>
-                                        <li><a href="#">Another action</a></li>
-                                        <li><a href="#">Something else here</a></li>
-                                        <li class="divider"></li>
-                                        <li><a href="#">Separated link</a></li>
-                                        <li class="divider"></li>
-                                        <li><a href="#">One more separated link</a></li>
+                                        <li>@Html.ActionLink("УСПЕХ", "Uspeh", "Project", null)</li>
+                                        <li>@Html.ActionLink("TEA GLOBAL 2013", "TeaGlobal", "Project", null)</li>
+                                        <li>@Html.ActionLink("TALIS", "Talis", "Project", null)</li>
+                                        <li>@Html.ActionLink("Фортисимо клас", "FortisimoKlas", "Project", null)</li>
+                                        <li>@Html.ActionLink("Целодневно обучение", "CelodnevnoObuchenie", "Project", null)</li>
+                                        <li>@Html.ActionLink("Научи се да караш ски", "Ski", "Project", null)</li>
+                                        <li>@Html.ActionLink("Млад велосипедист", "MladVelosipedist", "Project", null)</li>
+                                        <li>@Html.ActionLink("Ученически евроклуб", "UchenicheskiEvroKlub", "Project", null)</li>
                                     </ul>
                                 </li>
                             </ul>
@@ -120,6 +119,7 @@
                 <div class="carousel-inner" role="listbox">
 
                     <div class="item">
+                        
                        <a href="https://www.facebook.com/"><img src="http://128sou-sofia.info/wp-content/uploads/2013/03/pic1-800x344.jpg" alt="Chania" width="960" height="345"></a> 
                         <div class="carousel-caption">
                             <h3>За Нас</h3>
@@ -165,11 +165,6 @@
                     </div>
                 </div>
             <div class="col-md-4">
-                @*<video width="172" height="172" controls>
-                    <source src="movie.mp4" type="video/mp4">
-                    <source src="movie.ogg" type="video/ogg">
-                    Your browser does not support the video tag.
-                </video>*@
                 <iframe width="172" height="172" src="https://www.youtube.com/embed/XGSy3_Czz8k"></iframe>
             </div>
             <div class="col-md-3">
