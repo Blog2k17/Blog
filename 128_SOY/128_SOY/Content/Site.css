@@ -298,6 +298,12 @@ margin:10px;
 .actionLink {
     color: orange;
     outline: none;
+    margin-left:5px;
+}
+
+.actionLink:hover {
+    color:orange;
+    outline:none;
 }
 
 .ngg-galleryoverview {
@@ -315,3 +321,12 @@ margin:10px;
     
 }
 
+.text-zone {
+    font-size:15px; 
+     color:black; 
+}
+
+#span-text {
+    color:black;
+    font-size:17px;
+}

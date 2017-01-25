@@ -15,6 +15,8 @@ namespace _128_SOY.Controllers
         }
         public ActionResult PodgotvitelnaGrupa()
         {
+            
+
             return View();
         }
         public ActionResult PyrviKlas()

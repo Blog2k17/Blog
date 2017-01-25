@@ -213,8 +213,11 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Images\pattern\2014_-_128_СОУ-PEDAGOG.jpg" />
     <Content Include="Content\Images\pattern\daskalo.png" />
     <Content Include="Content\Images\pattern\kobcheta.png" />
+    <Content Include="Content\Images\zaqvleniq\15tiKlas.jpg" />
+    <Content Include="Content\Images\zaqvleniq\tablica7klas.png" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -224,6 +227,8 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Content\Images\zaqvleniq\Заявление_за_П_Г_.doc" />
+    <Content Include="Content\Images\zaqvleniq\Заявление-за-записване-на-І-кл.doc" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -277,10 +282,15 @@
     <Content Include="Views\Project\Ski.cshtml" />
     <Content Include="Views\Project\MladVelosipedist.cshtml" />
     <Content Include="Views\Project\UchenicheskiEvroklub.cshtml" />
+    <Content Include="Views\Priem\PodgotvitelnaGrupa.cshtml" />
+    <Content Include="Views\Priem\Index.cshtml" />
+    <Content Include="Views\Priem\Sled8miKlas.cshtml" />
+    <Content Include="Views\Priem\PetiKlas.cshtml" />
+    <Content Include="Views\Priem\PyrviKlas.cshtml" />
+    <Content Include="Views\Priem\Sled7miKlas.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Priem\" />
     <Folder Include="Views\ZaNas\" />
   </ItemGroup>
   <ItemGroup>
