@@ -288,10 +288,14 @@
     <Content Include="Views\Priem\PetiKlas.cshtml" />
     <Content Include="Views\Priem\PyrviKlas.cshtml" />
     <Content Include="Views\Priem\Sled7miKlas.cshtml" />
+    <Content Include="Views\ZaNas\IstoriaTradicii.cshtml" />
+    <Content Include="Views\ZaNas\PedagogicheskiEkip.cshtml" />
+    <Content Include="Views\ZaNas\UchilishtnaSreda.cshtml" />
+    <Content Include="Views\ZaNas\Profil.cshtml" />
+    <Content Include="Views\ZaNas\ElektronenDnevnik.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\ZaNas\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
