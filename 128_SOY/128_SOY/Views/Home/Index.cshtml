@@ -172,9 +172,8 @@
             <div class="col-md-4">
                 <img src="http://128sou-sofia.info/wp-content/uploads/2016/05/20160419_180050-160x160.jpg" class="img-responsive" alt="Cinque Terre" width="172" height="172"> 
             </div>
-            <div class="col-sm-3">
-                @*@Html.ActionLink("Ученици от 128 СОУ „Алберт Айнщайн” печелят медал на състезание за есе на английски език в Дубай (видео)", "Index", "Home", null, new { @class = "cvqt" })*@
-                <a class="cvqt" href="https://128sou-sofia.info/%d0%b7%d0%b0-%d0%b7%d1%80%d0%b5%d0%bb%d0%be%d1%81%d1%82%d0%bd%d0%b8%d1%86%d0%b8/">Ученици от 128 СОУ „Алберт Айнщайн” печелят медал на състезание за есе на английски език в Дубай (видео)</a>
+            <div class="col-sm-3" style="font-size:20px">
+              @Html.ActionLink("Ученици от 128 СОУ „Алберт Айнщайн” печелят медал на състезание за есе на английски език в Дубай (видео)", "EseAngliiskiEzikDubai", "PosledniNovini", null, new { @class = "actionLinks" })
             </div>
                 <div class="col-sm-5">
                     <div class="panel panel-default" style="width: 200px; float:right">
@@ -182,18 +181,20 @@
                     </div>
                 </div>
             <div class="col-md-4">
-                <iframe width="172" height="172" src="https://www.youtube.com/embed/XGSy3_Czz8k"></iframe>
+                <video width="172" height="172" controls>
+                    <source src="http://128sou-sofia.info/wp-content/uploads/2016/03/Zaedno.mp4?_=1" type="video/mp4">
+                   
+                </video>
             </div>
-            <div class="col-md-3">
-                @*@Html.ActionLink("Ученици от 128 СОУ „Алберт Айнщайн” печелят медал на състезание за есе на английски език в Дубай (видео)", "Index", "Home", null, new { @class = "cvqt" })*@
-                <a class="cvqt" href="https://128sou-sofia.info/%d0%b7%d0%b0-%d0%b7%d1%80%d0%b5%d0%bb%d0%be%d1%81%d1%82%d0%bd%d0%b8%d1%86%d0%b8/">Заедно можем повече</a>
+            <div class="col-md-3" style="font-size:20px">
+                @Html.ActionLink("Заедно можем повече!", "ZaednoMojemPoveche", "PosledniNovini", null, new { @class = "actionLinks" })
             </div>
             <div class="col-sm-5">
                 <div class="panel panel-default "style="width: 200px; float:right">
-                    <div class="panel-body" style="padding:12px;"><img src="http://128sou-sofia.info/wp-content/uploads/2016/02/128_UchilishtenJivot.jpg" class="img-thumbnail" alt="Cinque Terre" width="200" height="285"></div>
+                    <div class="panel-body" style="padding:12px;"><img src="http://128sou-sofia.info/wp-content/uploads/2016/02/128_UchilishtenJivot.jpg" class="img-thumbnail" alt="" width="200" height="285"></div>
                 </div>
             </div>
-            @*<div class="mejs-overlay mejs-layer mejs-overlay-play" style="width: 100%; height: 100%;"><div class="mejs-overlay-button"></div></div>*@
+            
         </div>
         </div>
           </div>
