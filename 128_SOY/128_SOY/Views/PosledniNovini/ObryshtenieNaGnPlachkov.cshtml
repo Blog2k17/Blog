@@ -1,19 +1,9 @@
-﻿
-@{
-    ViewBag.Title = "Sled8miKlas";
-}
-
-
-@{
-    ViewBag.Title = "PodgotvitelnaGrupa";
-}
-
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="bg-BG">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>След завършен VІІІ клас</title>
+    <title>Обръщение на г-н Юлиян Плачков, директор на 128 СОУ „Алберт Айнщайн“, по случай началото на учебната 2013/2014 г.</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -80,7 +70,7 @@
                             <li class="collapse navbar" id="bs-example-navbar-collapse-1">
                                 <ul class="nav navbar-nav">
                                     <li class="dropdown">
-                                        @Html.ActionLink("Прием", "Index", "Home", null, new { @class = "dropdown-toggle buttons" })
+                                        @Html.ActionLink("Прием", "Index", "Priem", null, new { @class = "dropdown-toggle buttons" })
                                         <ul class="dropdown-menu">
                                             <li>@Html.ActionLink("В подготвителна група", "PodgotvitelnaGrupa", "Priem", null, new { @class = "" })</li>
                                             <li class="divider"></li>
@@ -91,6 +81,8 @@
                                             <li>@Html.ActionLink("След завършен VII клас", "Sled7miKlas", "Priem", null, new { @class = "" })</li>
                                             <li class="divider"></li>
                                             <li>@Html.ActionLink("След завършен VIII клас", "Sled8miKlas", "Priem", null, new { @class = "" })</li>
+                                            @*<li class="divider"></li>*@
+
                                         </ul>
                                     </li>
                                 </ul>
@@ -100,7 +92,7 @@
                                     <li class="dropdown">
                                         @Html.ActionLink("Проекти", "Index", "Project", null, new { @class = "dropdown-toggle buttons" })
                                         <ul class="dropdown-menu">
-                                            <li>@Html.ActionLink("УСПЕХ", "Uspeh", "Project", null, new { @class = "" })</li>
+                                            <li>@Html.ActionLink("УСПЕХ", "Uspeh", "Project", null)</li>
                                             <li class="divider"></li>
                                             <li>@Html.ActionLink("TEA GLOBAL 2013", "TeaGlobal", "Project", null, new { @class = "" })</li>
                                             <li class="divider"></li>
@@ -133,18 +125,45 @@
             <!-- Page Heading Start -->
 
             <div id="page-heading" style="position:center; width:auto;">
-                <h3 class="heading-text" style="width:350px">
-                    След завършен VІІІ клас
+                <h3 class="heading-text">
+                    Последни новини
                 </h3>
             </div>
             <!-- Page Heading End -->
             <!-- Main Content Start
                 <img src="http://128sou-sofia.info/wp-content/uploads/2013/03/%D0%B7%D0%B0-%D0%BD%D0%B0%D1%81-128%D0%A1%D0%9E%D0%A3.jpg" width="201" height="217" /> -->
             <div class="maincontent" style="margin-left:20px;">
-                <div class="text-center" style="margin-top:50px;">
-                    <p style="color:black;"><span style="color:black; font-family:'Monotype Corsiva'; font-size:25px;"><strong>ПРИЕМ след осми клас</strong></span></p>
+                <br />
+                <br />
+                <p style="font-size:28px; "><strong>Обръщение на г-н Юлиян Плачков, директор на 128 СОУ „Алберт Айнщайн“, по случай началото на учебната 2013/2014 г.</strong></p>
+                <br />
+                <br />
+                <p class="text-center"><strong>Уважаеми ученици, учители и служители на 128-мо училище!</strong></p>
+                <br />
+                <br />
+                Поздравявам Ви отново в началото на учебната 2013-2014 г. с пожелание за успешна работа, творческо вдъхновение и удовлетворение от общите ни усилия и труд. В тази сграда ние пребиваваме с една  цел – да предадем опита и знанията си на нашите възпитаници, които да придобият умения и способности за успешното си развитие като личности и граждани.
+                <br />
+                <br />
+                От новата учебна година преминаваме на едносменен режим на обучение, което е широко позната европейска практика. Така до обяд, когато всички сме по-бодри и работоспособни, ще протичат редовните учебни часове, а след обяд – занималните за учениците от І-ви до ІV-ти клас и всички извънкласни занимания по интереси на учениците от V-ти до ХІІ-ти клас. И през тази учебна година продължават дейностите по проекта УСПЕХ, в който всеки желаещ ученик в следобедните часове,  може да се включи безплатно в различните клубове по интереси, ателиета и секции.
+                <br />
+                <br />
+                През лятото ръководството на училището положи големи усилия за обновяване и модернизиране на класните стаи, кабинети и общите пространства. Първите два етажа на сградата вече са в отлично състояние, започнахме ремонти и на третия етаж, като да края на учебната година обновяването ще обхване и помещенията на четвъртия етаж. Тук е мястото да изразя благодарността си за моралната и материална подкрепа от страна на вашите родители, както и за вашето добро отношение за опазване на материалната база. В по-голямата част от деня всички ние обитаваме  сградата на училището и трябва заедно да се стремим към съхраняване и подържане на една уютна и приятна среда.
+                <br />
+                <br />
+                Уважаеми ученици, за атмосферата в нашето училище по традиция са чужди и неприемливи проявите на агресия и грубост. Нека да доказваме себе си с интелект, култура и познания, с постижения  на спортните площадки или с изяви във всички направления на изкуството. Нека нашият общ дом – 128 СОУ превърнем в храм на знанието, място за положителни емоции, за приятелства и равноправни човешки отношения.
+                <br />
+                <br />
+                За по-спокойното протичане на учебните часовe сме обособили учениците от І-ви до ІV-ти клас в класните стаи на първите два етажа, а учениците от V-ти до ХІІ-ти клас да се обучават на  ІІІ-ти и ІV-ти етаж. Сигурни сме, че по-големите ученици ще се отнасят приятелски и грижовно към по-малките.За целта – учениците от V-ти до ХІІ-ти клас ще влизат и излизат от училище по стълбищата с тоалетните помещения в посока запад, а за часовете по физкултура, музика и английски език ще слизат на І-ия етаж по стълбищата към учителската стая в посока изток, без да преминават през коридорите на І-ви и ІІ-ри етаж.
+                <br />
+                <br />
+                <p class="text-center" ><strong>И отново:  На добър час – за една ползотворна, спокойна и успешна учебна година!</strong></p>
+                <p class="text-right"><em>Юлиян Плачков</em></p>
+                <p class="text-right" ><em>Директор на 128 СОУ „Алберт Айнщайн”</em></p>
+                <div class="text-center">
+                    @Html.ActionLink("← Нова паралелка „Защита на информацията“ ", "ZashtitaNaInformaciqta", "PosledniNovini", null, new { @class = "actionLinks" })
+                    @Html.ActionLink("Златен медал в училището! →", "KlasniStaiObnovqvane", "PosledniNovini", null, new { @class = "actionLinks" })
                 </div>
-                <p><span font-size:17px;">Ръководството на 128 СОУ „Алберт Айнщайн“ Ви уведомява, че за учебната 2016-2017 г.  се предвижда прием в паралелка профил „Технологичен“-Туризъм. Кандидатстването е  със свидетелство за завършено основно образование.</span></p><br>
+               
             </div>
             <!-- Main Content End -->
             <!-- Side Content Start -->
@@ -152,52 +171,26 @@
                 <div class="sidebar">
                     <div class="sidebartop"></div><div class="sidebarmain">
                         <div id="recent-posts-4" class="sidebarcontent widget_recent_entries">
-                            <h4 class="sidebarheading">Прием</h4><hr>
-                            <ul style="list-style: none; font-size:smaller; border-color:black;">
-                                <li class="actionLink">
-                                    @Html.ActionLink("В подготвителна група", "PodgotvitelnaGrupa", "Priem", null, new { @class = "actionLinks" }) &gt;
-                                </li>
-                                <hr class="sidebar-divider">
-                                <li class="actionLink">
-                                    @Html.ActionLink("В първи клас", "PyrviKlas", "Priem", null, new { @class = "actionLinks" }) &gt;
-                                </li>
-                                <hr class="sidebar-divider">
-                                <li class="actionLink">
-                                    @Html.ActionLink("В пети клас", "PetiKlas", "Priem", null, new { @class = "actionLinks" }) &gt;
-                                </li>
-                                <hr class="sidebar-divider">
-                                <li class="actionLink">
-                                    @Html.ActionLink("След завършен VІІ клас", "Sled7miKlas", "Priem", null, new { @class = "actionLinks" }) &gt;
-                                </li>
-                                <hr class="sidebar-divider">
-                                <li class="actionLink">
-                                    @Html.ActionLink("След завършен VІІІ клас", "Sled8miKlas", "Priem", null, new { @class = "actionLinks" }) &gt;
-                                </li>
-                                <hr class="sidebar-divider">
-                            </ul>
-                        </div><br>
-                    </div><div class="sidebarbottom"></div><div class="sidebarmain">
-                        <div id="recent-posts-4" class="sidebarcontent widget_recent_entries">
                             <h4 class="sidebarheading">Последни новини</h4><hr>
                             <ul style="list-style: none; font-size:smaller;">
                                 <li class="actionLink">
-                                    @Html.ActionLink("Ученици от 128 СОУ „Алберт Айнщайн” печелят медал на състезание за есе на английски език в Дубай (видео)", "About", "Home", null, new { @class = "actionLinks" }) &gt;
+                                    @Html.ActionLink("Ученици от 128 СОУ „Алберт Айнщайн” печелят медал на състезание за есе на английски език в Дубай (видео)", "EseAngliiskiEzikDubai", "PosledniNovini", null, new { @class = "actionLinks" }) &gt;
                                 </li>
                                 <hr class="sidebar-divider">
                                 <li class="actionLink">
-                                    @Html.ActionLink("Заедно можем повече", "About", "Home", null, new { @class = "actionLinks" }) &gt;
+                                    @Html.ActionLink("Заедно можем повече", "ZaednoMojemPoveche", "PosledniNovini", null, new { @class = "actionLinks" }) &gt;
                                 </li>
                                 <hr class="sidebar-divider">
                                 <li class="actionLink">
-                                    @Html.ActionLink("Цялостно обновяване на класните стаи и учебни кабинети", "About", "Home", null, new { @class = "actionLinks" }) &gt;
+                                    @Html.ActionLink("Цялостно обновяване на класните стаи и учебни кабинети", "KlasniStaiObnovqvane", "PosledniNovini", null, new { @class = "actionLinks" }) &gt;
                                 </li>
                                 <hr class="sidebar-divider">
                                 <li class="actionLink">
-                                    @Html.ActionLink("Златен медал в училището!", "About", "Home", null, new { @class = "actionLinks" }) &gt;
+                                    @Html.ActionLink("Златен медал в училището!", "ZlatenMedal", "PosledniNovini", null, new { @class = "actionLinks" }) &gt;
                                 </li>
                                 <hr class="sidebar-divider">
                                 <li class="actionLink">
-                                    @Html.ActionLink("Обръщение на г-н Юлиян Плачков, директор на 128 СОУ „Алберт Айнщайн“, по случай началото на учебната 2013/2014 г.", "About", "Home", null, new { @class = "actionLinks" }) &gt;
+                                    @Html.ActionLink("Обръщение на г-н Юлиян Плачков, директор на 128 СОУ „Алберт Айнщайн“, по случай началото на учебната 2013/2014 г.", "ObryshtenieNaGnPlachkov", "PosledniNovini", null, new { @class = "actionLinks" }) &gt;
                                 </li>
                                 <hr class="sidebar-divider">
                             </ul>
@@ -234,9 +227,30 @@
         </div>
 
     </div>
+
+    <script>
+                    //var slideIndex = 0;
+                    //showSlides();
+
+                    //function showSlides() {
+                    //    var i;
+                    //    var slides = document.getElementsByClassName("mySlides");
+                    //    var dots = document.getElementsByClassName("dot");
+                    //    for (i = 0; i < slides.length; i++) {
+                    //       slides[i].style.display = "none";
+                    //    }
+                    //    slideIndex++;
+                    //    if (slideIndex> slides.length) {slideIndex = 1}
+                    //    for (i = 0; i < dots.length; i++) {
+                    //        dots[i].className = dots[i].className.replace(" active", "");
+                    //    }
+                    //    slides[slideIndex-1].style.display = "block";
+                    //    dots[slideIndex-1].className += " active";
+                    //    setTimeout(showSlides, 2000); // Change image every 2 seconds
+                    //}
+    </script>
+
 </body>
 </html>
-
-
 
 

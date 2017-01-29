@@ -1,19 +1,9 @@
-﻿
-@{
-    ViewBag.Title = "Sled8miKlas";
-}
-
-
-@{
-    ViewBag.Title = "PodgotvitelnaGrupa";
-}
-
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="bg-BG">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>След завършен VІІІ клас</title>
+    <title>Ученичката Надежда Димитрова от 128 СОУ „Алберт Айнщайн” е класирана на първо място на математическото състезание „Европейско кенгуру” на френски език</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -80,7 +70,7 @@
                             <li class="collapse navbar" id="bs-example-navbar-collapse-1">
                                 <ul class="nav navbar-nav">
                                     <li class="dropdown">
-                                        @Html.ActionLink("Прием", "Index", "Home", null, new { @class = "dropdown-toggle buttons" })
+                                        @Html.ActionLink("Прием", "Index", "Priem", null, new { @class = "dropdown-toggle buttons" })
                                         <ul class="dropdown-menu">
                                             <li>@Html.ActionLink("В подготвителна група", "PodgotvitelnaGrupa", "Priem", null, new { @class = "" })</li>
                                             <li class="divider"></li>
@@ -91,6 +81,8 @@
                                             <li>@Html.ActionLink("След завършен VII клас", "Sled7miKlas", "Priem", null, new { @class = "" })</li>
                                             <li class="divider"></li>
                                             <li>@Html.ActionLink("След завършен VIII клас", "Sled8miKlas", "Priem", null, new { @class = "" })</li>
+                                            @*<li class="divider"></li>*@
+
                                         </ul>
                                     </li>
                                 </ul>
@@ -100,7 +92,7 @@
                                     <li class="dropdown">
                                         @Html.ActionLink("Проекти", "Index", "Project", null, new { @class = "dropdown-toggle buttons" })
                                         <ul class="dropdown-menu">
-                                            <li>@Html.ActionLink("УСПЕХ", "Uspeh", "Project", null, new { @class = "" })</li>
+                                            <li>@Html.ActionLink("УСПЕХ", "Uspeh", "Project", null)</li>
                                             <li class="divider"></li>
                                             <li>@Html.ActionLink("TEA GLOBAL 2013", "TeaGlobal", "Project", null, new { @class = "" })</li>
                                             <li class="divider"></li>
@@ -133,18 +125,33 @@
             <!-- Page Heading Start -->
 
             <div id="page-heading" style="position:center; width:auto;">
-                <h3 class="heading-text" style="width:350px">
-                    След завършен VІІІ клас
+                <h3 class="heading-text">
+                    Последни новини
                 </h3>
             </div>
             <!-- Page Heading End -->
             <!-- Main Content Start
                 <img src="http://128sou-sofia.info/wp-content/uploads/2013/03/%D0%B7%D0%B0-%D0%BD%D0%B0%D1%81-128%D0%A1%D0%9E%D0%A3.jpg" width="201" height="217" /> -->
-            <div class="maincontent" style="margin-left:20px;">
-                <div class="text-center" style="margin-top:50px;">
-                    <p style="color:black;"><span style="color:black; font-family:'Monotype Corsiva'; font-size:25px;"><strong>ПРИЕМ след осми клас</strong></span></p>
-                </div>
-                <p><span font-size:17px;">Ръководството на 128 СОУ „Алберт Айнщайн“ Ви уведомява, че за учебната 2016-2017 г.  се предвижда прием в паралелка профил „Технологичен“-Туризъм. Кандидатстването е  със свидетелство за завършено основно образование.</span></p><br>
+            <div class="maincontent" style="margin-left:20px; height:600px">
+                <br />
+                <br />
+                <p style="font-size:22px; "><strong>Ученичката Надежда Димитрова от 128 СОУ „Алберт Айнщайн” е класирана на първо място на математическото състезание „Европейско кенгуру” на френски език</strong></p>
+                <br />
+                <br />
+
+                <p>
+               <img class="img-responsive" src="http://128sou-sofia.info/wp-content/uploads/2013/03/Nad13-06-20_nagradi2.jpg" width="600" height="400">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; На 20 юни 2013 г. в Министерството на образованието и науката се състоя тържествена церемония по награждаването на учениците, завоювали първи места в националния кръг на математическото състезание „Европейско кенгуру”. Класирана на първо място в категорията 8 клас сред учениците с най-добри резултати на математическото състезание „Европейско кенгуру” на френски език е ученичката&nbsp;от&nbsp;нашето училище&nbsp;<strong>Надежда Димитрова Димитрова</strong>.
+                </p>
+                <p class="text-center" style="font-size:10px">
+                    <img class="img-responsive" src="http://128sou-sofia.info/wp-content/uploads/2013/06/Kenguru-2013.jpg" width="600" height="534">Надя с министъра на образованието и науката проф. д-р Анелия Клисарова(в дясно) и председателя на съюза на математиците – акад. Петър Кендеров (в ляво)от награждаването на Националния кръг на състезанието „Европейско Кенгуру“.</strong>.
+                </p>
+                <br />
+                <br />
+                <p class="text-center">Отново честито, Надя!</p>
+                <br />
+                Пълния текст на приветствието на проф.д-р. Анелия Клисарова и академик Петър Кендеров вижте тук
+                <br />
+                @Html.ActionLink("Репортаж на НОВА ТЕЛЕВИЗИЯ →", "ReportajNaNova", "PosledniNovini", null, new { @class = "actionLinks" })
             </div>
             <!-- Main Content End -->
             <!-- Side Content Start -->
@@ -152,52 +159,26 @@
                 <div class="sidebar">
                     <div class="sidebartop"></div><div class="sidebarmain">
                         <div id="recent-posts-4" class="sidebarcontent widget_recent_entries">
-                            <h4 class="sidebarheading">Прием</h4><hr>
-                            <ul style="list-style: none; font-size:smaller; border-color:black;">
-                                <li class="actionLink">
-                                    @Html.ActionLink("В подготвителна група", "PodgotvitelnaGrupa", "Priem", null, new { @class = "actionLinks" }) &gt;
-                                </li>
-                                <hr class="sidebar-divider">
-                                <li class="actionLink">
-                                    @Html.ActionLink("В първи клас", "PyrviKlas", "Priem", null, new { @class = "actionLinks" }) &gt;
-                                </li>
-                                <hr class="sidebar-divider">
-                                <li class="actionLink">
-                                    @Html.ActionLink("В пети клас", "PetiKlas", "Priem", null, new { @class = "actionLinks" }) &gt;
-                                </li>
-                                <hr class="sidebar-divider">
-                                <li class="actionLink">
-                                    @Html.ActionLink("След завършен VІІ клас", "Sled7miKlas", "Priem", null, new { @class = "actionLinks" }) &gt;
-                                </li>
-                                <hr class="sidebar-divider">
-                                <li class="actionLink">
-                                    @Html.ActionLink("След завършен VІІІ клас", "Sled8miKlas", "Priem", null, new { @class = "actionLinks" }) &gt;
-                                </li>
-                                <hr class="sidebar-divider">
-                            </ul>
-                        </div><br>
-                    </div><div class="sidebarbottom"></div><div class="sidebarmain">
-                        <div id="recent-posts-4" class="sidebarcontent widget_recent_entries">
                             <h4 class="sidebarheading">Последни новини</h4><hr>
                             <ul style="list-style: none; font-size:smaller;">
                                 <li class="actionLink">
-                                    @Html.ActionLink("Ученици от 128 СОУ „Алберт Айнщайн” печелят медал на състезание за есе на английски език в Дубай (видео)", "About", "Home", null, new { @class = "actionLinks" }) &gt;
+                                    @Html.ActionLink("Ученици от 128 СОУ „Алберт Айнщайн” печелят медал на състезание за есе на английски език в Дубай (видео)", "EseAngliiskiEzikDubai", "PosledniNovini", null, new { @class = "actionLinks" }) &gt;
                                 </li>
                                 <hr class="sidebar-divider">
                                 <li class="actionLink">
-                                    @Html.ActionLink("Заедно можем повече", "About", "Home", null, new { @class = "actionLinks" }) &gt;
+                                    @Html.ActionLink("Заедно можем повече", "ZaednoMojemPoveche", "PosledniNovini", null, new { @class = "actionLinks" }) &gt;
                                 </li>
                                 <hr class="sidebar-divider">
                                 <li class="actionLink">
-                                    @Html.ActionLink("Цялостно обновяване на класните стаи и учебни кабинети", "About", "Home", null, new { @class = "actionLinks" }) &gt;
+                                    @Html.ActionLink("Цялостно обновяване на класните стаи и учебни кабинети", "KlasniStaiObnovqvane", "PosledniNovini", null, new { @class = "actionLinks" }) &gt;
                                 </li>
                                 <hr class="sidebar-divider">
                                 <li class="actionLink">
-                                    @Html.ActionLink("Златен медал в училището!", "About", "Home", null, new { @class = "actionLinks" }) &gt;
+                                    @Html.ActionLink("Златен медал в училището!", "ZlatenMedal", "PosledniNovini", null, new { @class = "actionLinks" }) &gt;
                                 </li>
                                 <hr class="sidebar-divider">
                                 <li class="actionLink">
-                                    @Html.ActionLink("Обръщение на г-н Юлиян Плачков, директор на 128 СОУ „Алберт Айнщайн“, по случай началото на учебната 2013/2014 г.", "About", "Home", null, new { @class = "actionLinks" }) &gt;
+                                    @Html.ActionLink("Обръщение на г-н Юлиян Плачков, директор на 128 СОУ „Алберт Айнщайн“, по случай началото на учебната 2013/2014 г.", "ObryshtenieNaGnPlachkov", "PosledniNovini", null, new { @class = "actionLinks" }) &gt;
                                 </li>
                                 <hr class="sidebar-divider">
                             </ul>
@@ -234,9 +215,30 @@
         </div>
 
     </div>
+
+    <script>
+                    //var slideIndex = 0;
+                    //showSlides();
+
+                    //function showSlides() {
+                    //    var i;
+                    //    var slides = document.getElementsByClassName("mySlides");
+                    //    var dots = document.getElementsByClassName("dot");
+                    //    for (i = 0; i < slides.length; i++) {
+                    //       slides[i].style.display = "none";
+                    //    }
+                    //    slideIndex++;
+                    //    if (slideIndex> slides.length) {slideIndex = 1}
+                    //    for (i = 0; i < dots.length; i++) {
+                    //        dots[i].className = dots[i].className.replace(" active", "");
+                    //    }
+                    //    slides[slideIndex-1].style.display = "block";
+                    //    dots[slideIndex-1].className += " active";
+                    //    setTimeout(showSlides, 2000); // Change image every 2 seconds
+                    //}
+    </script>
+
 </body>
 </html>
-
-
 
 
