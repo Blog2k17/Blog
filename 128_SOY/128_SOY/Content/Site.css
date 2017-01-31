@@ -10,6 +10,11 @@
     padding-left: 15px;
     padding-right: 15px;
 }
+.slideshow-content{
+    width:600px;
+    height:345px;
+}
+
 
 /* Override the default bootstrap behavior where horizontal description lists 
    will truncate terms that are too long to fit in the left column 
@@ -80,7 +85,7 @@ ul#listlatestnews li * {
 }
 /* ----------------------- FOOTER -----------------------*/
 #footer {
-  width: 900px;
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
   background: black;
@@ -296,12 +301,14 @@ ul.addresslist li  {
 margin:10px;
 }
 .actionLink {
+    background:none;
     color: orange;
     outline: none;
     margin-left:5px;
 }
 
 .actionLink:hover {
+    background:none;
     color:orange;
     outline:none;
 }

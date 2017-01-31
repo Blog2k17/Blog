@@ -285,6 +285,7 @@
     <Content Include="Views\Other\ZaZrelostnici.cshtml" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Home\Test.cshtml" />
+    <Content Include="Views\ZaNas\UchilishtenJivot.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
