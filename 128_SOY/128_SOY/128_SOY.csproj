@@ -285,8 +285,10 @@
     <Content Include="Views\Other\Kontakti.cshtml" />
     <Content Include="Views\Other\ZaZrelostnici.cshtml" />
     <Content Include="Views\_ViewStart.cshtml" />
-    <Content Include="Views\Home\Test.cshtml" />
     <Content Include="Views\ZaNas\UchilishtenJivot.cshtml" />
+    <Content Include="Views\Other\VajniVryzki.cshtml" />
+    <Content Include="Views\Other\Galeriq.cshtml" />
+    <Content Include="Views\Other\Aktualno.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
