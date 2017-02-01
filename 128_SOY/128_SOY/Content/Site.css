@@ -37,16 +37,16 @@ textarea {
 }
 
 .well-footer{ 
+  width:65vw;
   height: 45px;
   padding-top: 5px;
   margin-bottom: 20px;
   margin-left: 17vw;
-  margin-right:12vw;
   border: 1px solid black;
   border-radius: 10px;
   border-color: white;
   color:transparent;
-  display: inline-block;
+  display:inline-block;
 }
 .mamatideba{
     background-color:gainsboro;
@@ -84,13 +84,7 @@ ul#listlatestnews li * {
     left: 0;
 }
 /* ----------------------- FOOTER -----------------------*/
-#footer {
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-  background: black;
 
-}
 /* Footer Box */
 .footerbox {
   float: left;
@@ -172,7 +166,6 @@ ul.addresslist li  {
 
 .footermenu {
   float: left;
-  width: 500px;
   margin-left : 10px;
 }
 .footermenu ul {
@@ -194,7 +187,7 @@ ul.addresslist li  {
 }
 /* Copyright */
 .copyright {
-  width: 300px;
+  width: auto;
   display: block;
   text-align: right;
   float: right;
@@ -229,7 +222,6 @@ ul.addresslist li  {
 }
 
 #page-heading {
-    
     
     width: 960px;
     height: 182px;
@@ -702,3 +694,10 @@ margin:10px;
               margin: 0 auto;     
 
         }    
+
+
+    /*.images {
+        float:left;
+        width:220px;
+        height:auto;
+    }*/
