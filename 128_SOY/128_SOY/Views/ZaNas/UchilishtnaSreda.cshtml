@@ -92,7 +92,7 @@
                                     <li class="dropdown">
                                         @Html.ActionLink("Проекти", "Index", "Project", null, new { @class = "dropdown-toggle buttons" })
                                         <ul class="dropdown-menu">
-                                            <li>@Html.ActionLink("УСПЕХ", "Uspeh", "Project", null)</li>
+                                            <li>@Html.ActionLink("УСПЕХ", "Uspeh", "Project", null, new { @class = "" })</li>
                                             <li class="divider"></li>
                                             <li>@Html.ActionLink("TEA GLOBAL 2013", "TeaGlobal", "Project", null, new { @class = "" })</li>
                                             <li class="divider"></li>
@@ -321,13 +321,12 @@
         <hr />
     </div>
     <div class="well-footer ">
-        <div id="footer">
+        <div >
             <div class="clear"></div>
-
             <div>
                 <!-- Footer Menu -->
                 <div class="footermenu">
-                    <ul id="menu-footer" class="">
+                    <ul class="menu-footer">
                         <li id="menu-item-128" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-128">@Html.ActionLink("За зрелостници", "ZaZrelostnici", "Other", null, new { })</li>
                         <li id="menu-item-129" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-129">@Html.ActionLink("Важни връзки", "VajniVryzki", "Other", null, new { })</li>
                         <li id="menu-item-130" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-130">@Html.ActionLink("Актуално", "Aktualno", "Other", null, new { })</li>

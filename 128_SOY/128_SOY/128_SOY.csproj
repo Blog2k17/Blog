@@ -289,6 +289,7 @@
     <Content Include="Views\Other\VajniVryzki.cshtml" />
     <Content Include="Views\Other\Galeriq.cshtml" />
     <Content Include="Views\Other\Aktualno.cshtml" />
+    <Content Include="Views\ZaNas\SpecialniGosti.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

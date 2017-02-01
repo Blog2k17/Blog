@@ -1,9 +1,13 @@
-﻿<!DOCTYPE html>
+﻿
+@{
+    ViewBag.Title = "SpecialniGosti";
+}
+<!DOCTYPE html>
 <html lang="bg-BG">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Електронен дневник</title>
+    <title>Наши специални гости</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -115,134 +119,129 @@
                     </div>
                 </div>
                 <script>
-            $('ul.nav li.dropdown').hover(function () {
-                $(this).find('.dropdown-menu').stop(true, true).delay(100).fadeIn(50);
-            }, function () {
-                $(this).find('.dropdown-menu').stop(true, true).delay(100).fadeOut(50);
-            });
+                    $('ul.nav li.dropdown').hover(function () {
+                        $(this).find('.dropdown-menu').stop(true, true).delay(100).fadeIn(50);
+                    }, function () {
+                        $(this).find('.dropdown-menu').stop(true, true).delay(100).fadeOut(50);
+                    });
                 </script>
             </div>
             <!-- Page Heading Start -->
 
             <div id="page-heading" style="position:center; width:auto;">
                 <h3 class="heading-text" style="width:300px">
-                    Електронен дневник
+                    Наши специални гости
                 </h3>
             </div>
             <!-- Page Heading End -->
             <!-- Main Content Start -->
             <div class="maincontent" style="margin-left:20px;">
-                <br />
-                <br />
-                <br />
-                <p style="font-size:25px">Уважаеми родители, може да проверите успеха,бележките за повeдението и отсъствията на Вашето дете <a href="http://bgclass.net/" target="_blank">тук.</a></p>
-            </div>
-            <!-- Main Content End -->
-            <!-- Side Content Start -->
-            <div class="sidebarwe">
-                <div class="sidebar">
-                    <div class="sidebartop"></div><div class="sidebarmain">
-                        <div id="recent-posts-4" class="sidebarcontent widget_recent_entries">
-                            <h4 class="sidebarheading">За нас</h4><hr>
-                            <ul style="list-style: none; font-size:smaller; border-color:black;">
-                                <li class="actionLink">
-                                    @Html.ActionLink("История и традиции", "IstoriaTradicii", "ZaNas", null, new { @class = "actionLinks" }) &gt;
-                                </li>
-                                <hr class="sidebar-divider">
-                                <li class="actionLink">
-                                    @Html.ActionLink("Педагогически екип", "PedagogicheskiEkip", "ZaNas", null, new { @class = "actionLinks" }) &gt;
-                                </li>
-                                <hr class="sidebar-divider">
-                                <li class="actionLink">
-                                    @Html.ActionLink("Училищна среда", "UchilishtnaSreda", "ZaNas", null, new { @class = "actionLinks" }) &gt;
-                                </li>
-                                <hr class="sidebar-divider">
-                                <li class="actionLink">
-                                    @Html.ActionLink("Профил на купувача и други документи", "Profil", "ZaNas", null, new { @class = "actionLinks" }) &gt;
-                                </li>
-                                <hr class="sidebar-divider">
-                                <li class="actionLink">
-                                    @Html.ActionLink("Училищен живот", "UchilishtenJivot", "ZaNas", null, new { @class = "actionLinks" }) &gt;
-                                </li>
-                                <hr class="sidebar-divider">
-                                <li class="actionLink">
-                                    @Html.ActionLink("Наши специални гости", "SpecialniGosti", "ZaNas", null, new { @class = "actionLinks" }) &gt;
-                                </li>
-                                <hr class="sidebar-divider">
-                                <li class="actionLink">
-                                    @Html.ActionLink("Електронен дневник", "ElektronenDnevnik", "ZaNas", null, new { @class = "actionLinks" }) &gt;
-                                </li>
-                                <hr class="sidebar-divider">
-                                <li class="actionLink">
-                                    @Html.ActionLink("TALIS", "Talis", "Project", null, new { @class = "actionLinks" }) &gt;
-                                </li>
-                                <hr class="sidebar-divider">
-                            </ul>
-                        </div><br>
-                    </div><div class="sidebarbottom"></div><div class="sidebarmain">
-    <div id="recent-posts-4" class="sidebarcontent widget_recent_entries">
-        <h4 class="sidebarheading">Последни новини</h4><hr>
-        <ul style="list-style: none; font-size:smaller;">
-            <li class="actionLink">
-                @Html.ActionLink("Ученици от 128 СОУ „Алберт Айнщайн” печелят медал на състезание за есе на английски език в Дубай (видео)", "EseAngliiskiEzikDubai", "PosledniNovini", null, new { @class = "actionLinks" }) &gt;
-            </li>
-            <hr class="sidebar-divider">
-            <li class="actionLink">
-                @Html.ActionLink("Заедно можем повече", "ZaednoMojemPoveche", "PosledniNovini", null, new { @class = "actionLinks" }) &gt;
-            </li>
-            <hr class="sidebar-divider">
-            <li class="actionLink">
-                @Html.ActionLink("Цялостно обновяване на класните стаи и учебни кабинети", " KlasniStaiObnovqvane", "PosledniNovini", null, new { @class = "actionLinks" }) &gt;
-            </li>
-            <hr class="sidebar-divider">
-            <li class="actionLink">
-                @Html.ActionLink("Златен медал в училището!", "ZlatenMedal", "PosledniNovini", null, new { @class = "actionLinks" }) &gt;
-            </li>
-            <hr class="sidebar-divider">
-            <li class="actionLink">
-                @Html.ActionLink("Обръщение на г-н Юлиян Плачков, директор на 128 СОУ „Алберт Айнщайн“, по случай началото на учебната 2013/2014 г.", "ObryshtenieNaGnPlachkov", "PosledniNovini", null, new { @class = "actionLinks" }) &gt;
-            </li>
-            <hr class="sidebar-divider">
-        </ul>
-    </div>
-</div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-10">
+                            <img src="http://128sou-sofia.info/wp-content/uploads/photo-gallery/thumb/sn-1.jpg" width="220px;" height="auto;" />
+                        </div>
+                    </div>
                 </div>
             </div>
-            <!-- Side Content End-->
         </div>
-        <hr />
-    </div>
-    <div class="well-footer ">
-        <div>
-            <div class="clear"></div>
-
+        <!-- Main Content End -->
+        <!-- Side Content Start -->
+        <div class="sidebarwe">
+            <div class="sidebar">
+                <div class="sidebartop"></div><div class="sidebarmain">
+                    <div id="recent-posts-4" class="sidebarcontent widget_recent_entries">
+                        <h4 class="sidebarheading">Последни новини</h4><hr>
+                        <ul style="list-style: none; font-size:smaller;">
+                            <li class="actionLink">
+                                @Html.ActionLink("Ученици от 128 СОУ „Алберт Айнщайн” печелят медал на състезание за есе на английски език в Дубай (видео)", "EseAngliiskiEzikDubai", "PosledniNovini", null, new { @class = "actionLinks" }) &gt;
+                            </li>
+                            <hr class="sidebar-divider">
+                            <li class="actionLink">
+                                @Html.ActionLink("Заедно можем повече", "ZaednoMojemPoveche", "PosledniNovini", null, new { @class = "actionLinks" }) &gt;
+                            </li>
+                            <hr class="sidebar-divider">
+                            <li class="actionLink">
+                                @Html.ActionLink("Цялостно обновяване на класните стаи и учебни кабинети", "KlasniStaiObnovqvane", "PosledniNovini", null, new { @class = "actionLinks" }) &gt;
+                            </li>
+                            <hr class="sidebar-divider">
+                            <li class="actionLink">
+                                @Html.ActionLink("Златен медал в училището!", "ZlatenMedal", "PosledniNovini", null, new { @class = "actionLinks" }) &gt;
+                            </li>
+                            <hr class="sidebar-divider">
+                            <li class="actionLink">
+                                @Html.ActionLink("Обръщение на г-н Юлиян Плачков, директор на 128 СОУ „Алберт Айнщайн“, по случай началото на учебната 2013/2014 г.", "ObryshtenieNaGnPlachkov", "PosledniNovini", null, new { @class = "actionLinks" }) &gt;
+                            </li>
+                            <hr class="sidebar-divider">
+                        </ul>
+                    </div>
+                </div>
+                <div class="sidebarbottom"></div><div class="sidebarmain">
+                    <div id="recent-posts-4" class="sidebarcontent widget_recent_entries">
+                        <h4 class="sidebarheading">Последни новини</h4><hr>
+                        <ul style="list-style: none; font-size:smaller;">
+                            <li class="actionLink">
+                                @Html.ActionLink("Ученици от 128 СОУ „Алберт Айнщайн” печелят медал на състезание за есе на английски език в Дубай (видео)", "EseAngliiskiEzikDubai", "PosledniNovini", null, new { @class = "actionLinks" }) &gt;
+                            </li>
+                            <hr class="sidebar-divider">
+                            <li class="actionLink">
+                                @Html.ActionLink("Заедно можем повече", "ZaednoMojemPoveche", "PosledniNovini", null, new { @class = "actionLinks" }) &gt;
+                            </li>
+                            <hr class="sidebar-divider">
+                            <li class="actionLink">
+                                @Html.ActionLink("Цялостно обновяване на класните стаи и учебни кабинети", " KlasniStaiObnovqvane", "PosledniNovini", null, new { @class = "actionLinks" }) &gt;
+                            </li>
+                            <hr class="sidebar-divider">
+                            <li class="actionLink">
+                                @Html.ActionLink("Златен медал в училището!", "ZlatenMedal", "PosledniNovini", null, new { @class = "actionLinks" }) &gt;
+                            </li>
+                            <hr class="sidebar-divider">
+                            <li class="actionLink">
+                                @Html.ActionLink("Обръщение на г-н Юлиян Плачков, директор на 128 СОУ „Алберт Айнщайн“, по случай началото на учебната 2013/2014 г.", "ObryshtenieNaGnPlachkov", "PosledniNovini", null, new { @class = "actionLinks" }) &gt;
+                            </li>
+                            <hr class="sidebar-divider">
+                        </ul>
+                    </div>
+                </div>
+                <!-- Side Content End-->
+            </div>
+            <hr />
+        </div>
+        <div class="well-footer ">
             <div>
-                <!-- Footer Menu -->
-                <div class="footermenu">
-                    <ul id="menu-footer" class="">
-                        <li id="menu-item-128" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-128">@Html.ActionLink("За зрелостници", "ZaZrelostnici", "Other", null, new { })</li>
-                        <li id="menu-item-129" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-129">@Html.ActionLink("Важни връзки", "VajniVryzki", "Other", null, new { })</li>
-                        <li id="menu-item-130" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-130">@Html.ActionLink("Актуално", "Aktualno", "Other", null, new { })</li>
-                        <li id="menu-item-132" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-132">@Html.ActionLink("Галерия", "Galeriq", "Other", null, new { })</li>
-                        <li id="menu-item-131" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-131">@Html.ActionLink("Контакти", "Kontakti", "Other", null, new { })</li>
-                    </ul>
+                <div class="clear"></div>
+
+                <div>
+                    <!-- Footer Menu -->
+                    <div class="footermenu">
+                        <ul id="menu-footer" class="">
+                            <li id="menu-item-128" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-128">@Html.ActionLink("За зрелостници", "ZaZrelostnici", "Other", null, new { })</li>
+                            <li id="menu-item-129" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-129">@Html.ActionLink("Важни връзки", "VajniVryzki", "Other", null, new { })</li>
+                            <li id="menu-item-130" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-130">@Html.ActionLink("Актуално", "Aktualno", "Other", null, new { })</li>
+                            <li id="menu-item-132" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-132">@Html.ActionLink("Галерия", "Galeriq", "Other", null, new { })</li>
+                            <li id="menu-item-131" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-131">@Html.ActionLink("Контакти", "Kontakti", "Other", null, new { })</li>
+                        </ul>
+                    </div>
+                    <!-- Footer Menu End -->
+                    <!-- Site Copyright -->
+                    <div class="copyright">
+                        <p>        Изградено от Рида Амайре</p>
+                    </div>
+                    <!-- Site Copyright End -->
                 </div>
-                <!-- Footer Menu End -->
-                <!-- Site Copyright -->
-                <div class="copyright">
-                    <p>        Изградено от Рида Амайре</p>
-                </div>
-                <!-- Site Copyright End -->
             </div>
+
         </div>
 
-    </div>
-
-    <script>
-$(document).ready(function(){
-    $('[data-toggle="popover"]').popover();
-});
-    </script>
+        <script>
+            $(document).ready(function () {
+                $('[data-toggle="popover"]').popover();
+            });
+        </script>
 
 </body>
 </html>
+
+
+
+
